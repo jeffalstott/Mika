@@ -37,9 +37,13 @@ for i in dirlist:
         data['SD4_up'], data['SD4_down'] = avalanchetoolbox.avalanches.find_thresholds(df, 'SD', 4, 'both')
 
         print 'Likelihood calculation'
+        print '2'
         data['Likelihood2_up'], data['Likelihood2_down'] = avalanchetoolbox.avalanches.find_thresholds(df, 'Likelihood', 2, 'both')
+        print '5'
         data['Likelihood5_up'], data['Likelihood5_down'] = avalanchetoolbox.avalanches.find_thresholds(df, 'Likelihood', 5, 'both')
+        print '10'
         data['Likelihood10_up'], data['Likelihood10_down'] = avalanchetoolbox.avalanches.find_thresholds(df, 'Likelihood', 10, 'both')
+        print '20'
         data['Likelihood20_up'], data['Likelihood20_down'] = avalanchetoolbox.avalanches.find_thresholds(df, 'Likelihood', 20, 'both')
 
         print 'Local extrema event calculation'
